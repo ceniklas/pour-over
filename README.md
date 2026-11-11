@@ -35,3 +35,7 @@ pour-over upgrade --greedy # run a single custom brew command instead
 
 - Needs a terminal (it reads the password interactively) and an account with admin rights.
 - Anything that asks for a password some way other than `sudo` (for example a GUI installer prompt) can't be answered.
+
+## License
+
+[MIT](LICENSE)
