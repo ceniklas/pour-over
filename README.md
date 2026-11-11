@@ -1,5 +1,7 @@
 # pour-over
 
+<p align="center"><img src="pour-over.png" alt="Beer being poured through a pour-over coffee filter" width="420"><br><sub>Image generated with AI (ChatGPT).</sub></p>
+
 Do you install everything through Homebrew and casks? Then you know the enterprise annoyance: run `brew upgrade` and it asks for your password again and again, until you start thinking about weakening your password policy just to make it stop.
 
 Don't. **pour-over** asks for your password once, checks it, and answers every `sudo` prompt Homebrew throws at it for the rest of the run: `brew update`, then `brew upgrade`, including the cask uninstalls and installer packages that normally interrupt you. Go get a coffee.
