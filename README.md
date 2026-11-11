@@ -31,6 +31,15 @@ pour-over                  # brew update && brew upgrade --no-ask
 pour-over upgrade --greedy # run a single custom brew command instead
 ```
 
+## Security
+
+You are handing this tool your sudo password, so here is exactly what happens to it:
+
+- It is read from the terminal without echo and checked with `sudo -v` before anything else runs.
+- It is held in memory only, never written to disk, never put in an environment variable and never passed on a command line.
+- It is served over a Unix socket in a private temp directory (`0700`, socket `0600`) that exists only while pour-over runs.
+- **Any process running as your user (or root) during that window could read it from the socket.** Homebrew's own installers run as you, so they can too. That is inherent to answering `sudo` prompts unattended; if you don't trust everything `brew upgrade` is about to run, don't use pour-over.
+
 ## Limitations
 
 - Needs a terminal (it reads the password interactively) and an account with admin rights.

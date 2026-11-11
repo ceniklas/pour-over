@@ -1,4 +1,4 @@
-module pour-over
+module github.com/ceniklas/pour-over
 
 go 1.27.3
 
