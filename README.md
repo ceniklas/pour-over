@@ -48,3 +48,5 @@ You are handing this tool your sudo password, so here is exactly what happens to
 ## License
 
 [MIT](LICENSE)
+
+Co-Authored-By: AI-slop
